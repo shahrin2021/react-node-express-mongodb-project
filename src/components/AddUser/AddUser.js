@@ -20,7 +20,8 @@ const AddUser = () => {
         .then(data=> {
             if(data.insertedId){
              alert('successfully user added')
-                e.current.value='';
+             emailRef.current.value='';
+             nameRef.current.value="";
             }
         })
         e.preventDefault()
